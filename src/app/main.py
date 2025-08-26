@@ -5,7 +5,6 @@ from fastapi.templating import Jinja2Templates
 from starlette.responses import FileResponse
 
 from app.config import get_settings
-from app.database import create_db_and_tables
 from app.routers import tasks
 
 config = get_settings()
@@ -18,11 +17,6 @@ app.mount(
     name='static',
 )
 app.include_router(tasks.router)
-
-
-@app.on_event('startup')
-def on_startup():
-    create_db_and_tables()
 
 
 @app.get('/', response_class=HTMLResponse, include_in_schema=False)

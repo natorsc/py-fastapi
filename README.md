@@ -1,6 +1,6 @@
-# FastAPI and SQLModel
+# FastAPI - SQLModel - Alembic
 
-![FastAPI and SQLModel](docs/images/py-fastapi.webp)
+![FastAPI - SQLModel - Alembic](docs/images/py-fastapi.webp)
 
 [![natorsc - py-fastapi](https://img.shields.io/static/v1?label=natorsc&message=py-fastapi&color=blue&logo=github)](https://github.com/natorsc/py-fastapi)
 [![stars - py-fastapi](https://img.shields.io/github/stars/natorsc/py-fastapi?style=social)](https://github.com/natorsc/py-fastapi)
@@ -16,6 +16,7 @@ A ready-to-use starter template for building web applications with the [FastAPI]
 [![Python](https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/-FastAPI-blue?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![SQLModel](https://img.shields.io/badge/-SQLModel-blue?logo=sqlmodel&logoColor=white)](https://sqlmodel.tiangolo.com/)
+[![Alembic](https://img.shields.io/badge/-Alembic-blue?logo=alembic&logoColor=white)](https://alembic.sqlalchemy.org/en/latest/)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 
 ## 👨‍💻 Author
@@ -46,3 +47,4 @@ Your donation keeps this project alive and helps me continue creating and sharin
 
 - [FastAPI](https://fastapi.tiangolo.com/).
 - [SQLModel](https://sqlmodel.tiangolo.com/).
+- [Alembic](https://alembic.sqlalchemy.org/en/latest/).
