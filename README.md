@@ -17,7 +17,7 @@ A ready-to-use starter template for building web applications with the [FastAPI]
 [![FastAPI](https://img.shields.io/badge/-FastAPI-blue?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![SQLModel](https://img.shields.io/badge/-SQLModel-blue?logo=sqlmodel&logoColor=white)](https://sqlmodel.tiangolo.com/)
 [![Alembic](https://img.shields.io/badge/-Alembic-blue?logo=alembic&logoColor=white)](https://alembic.sqlalchemy.org/en/latest/)
-[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![pdm-managed](https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fpdm-project%2F.github%2Fbadge.json)](https://pdm-project.org)
 
 ## 👨‍💻 Author
 

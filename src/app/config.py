@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     app_name: str = 'Awesome API'
     admin_email: str = 'example@email.com'
     base_dir: pathlib.Path = pathlib.Path(__file__).resolve().parent
+    static_dir: pathlib.Path = base_dir / 'static'
+    templates_dir: pathlib.Path = base_dir / 'templates'
     items_per_user: int = 50
     database_url: str
     echo: bool = False

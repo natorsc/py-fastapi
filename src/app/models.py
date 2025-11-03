@@ -11,6 +11,7 @@ class Base(SQLModel):
         default_factory=lambda: datetime.now(timezone.utc),
         sa_column_kwargs={'onupdate': func.now()},
     )
+    active: bool = Field(default=True)
 
 
 class Task(Base, table=True):

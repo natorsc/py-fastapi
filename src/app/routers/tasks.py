@@ -4,10 +4,13 @@ from sqlmodel import Session, select
 from app.database import get_session
 from app.models import Task
 
-router = APIRouter()
+router = APIRouter(
+    prefix='/tasks',
+    tags=['Tasks'],
+)
 
 
-@router.get('/tasks/', tags=['tasks'])
+@router.get('')
 def read_tasks(
     *,
     session: Session = Depends(get_session),
@@ -17,7 +20,7 @@ def read_tasks(
     return session.exec(select(Task).offset(offset).limit(limit)).all()
 
 
-@router.post('/tasks/', tags=['tasks'])
+@router.post('')
 def create_tasks(*, session: Session = Depends(get_session), task: Task):
     session.add(task)
     session.commit()
@@ -25,7 +28,7 @@ def create_tasks(*, session: Session = Depends(get_session), task: Task):
     return task
 
 
-@router.put('/tasks/{task_id}', tags=['tasks'])
+@router.put('/{task_id}')
 def update_task(
     *, session: Session = Depends(get_session), task_id: int, task: Task
 ):
@@ -40,7 +43,7 @@ def update_task(
     return db_task
 
 
-@router.delete('/tasks/{task_id}', tags=['tasks'])
+@router.delete('/{task_id}')
 def delete_task(*, session: Session = Depends(get_session), task_id: int):
     task = session.get(Task, task_id)
     if not task:
