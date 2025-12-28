@@ -31,8 +31,8 @@ reset-migrations = {composite = [
     "alembic stamp base",
     "find alembic/versions/ -mindepth 1 -delete",
 ]}
-dev = "fastapi dev src/app/main.py"
-run = "fastapi run src/app/main.py"
+server = "fastapi dev src/app/main.py"
+prod = "fastapi run src/app/main.py"
 
 # [tool.fastapi]
 # app = "src.app.main:app"
